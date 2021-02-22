@@ -30,8 +30,7 @@ Output: 3
 
 
 class Solution:
-    def findJudge(self, N: int, trust: List[List[int]]) -> int:
-        
+    def findJudge(self, N: int, trust: List[List[int]]) -> int:   
         # Dictionaries to keep track of who each person trusts, and how many people trust them.
         # We know for a judge to exist, N - 1 people must trust them and they must trust no one.
         trust_dict = {x: [] for x in range(1, N+1)}
