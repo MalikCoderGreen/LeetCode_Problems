@@ -21,7 +21,7 @@ class Solution:
         k = len(numbers) - 1
         
         # Want to scan through and check from both sides closing on a potential match. 
-        # From the condition, we know we cannot return and element plus itself; that is where this loop ends.
+        # From the condition, we know we cannot return an element plus itself; that is where this loop ends.
         # The fact that this array is sorted allows us to use these conditionals to check for a match.
         while j != k:
             # If we know our sum is less than the target, move j up.
