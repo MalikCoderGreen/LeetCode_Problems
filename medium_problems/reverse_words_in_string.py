@@ -43,5 +43,6 @@ class Solution:
                 last_space = j
             j -= 1
             
+        # Add the first word from 's' to the end before return.    
         r += s[j:last_space]    
         return r
