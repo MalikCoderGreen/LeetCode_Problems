@@ -27,8 +27,7 @@ public:
                 maxPos = i;
             }
         }
-        // Sort the list (O(nlog(n))).
-        std::sort(nums.begin(), nums.end());
+
         // Find the total value of 'atLeast' (O(n)).
         for(int i: nums){ 
             if(i != max && i * 2 <= max)   
